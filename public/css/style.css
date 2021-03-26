@@ -1,0 +1,633 @@
+body{
+margin: 0 auto;
+
+}
+
+.container{
+    max-width:1450px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    border: solid 2px #F2F2F2;
+
+
+}
+
+.header__logo{
+    width: 8%;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+.nav-links a{
+    margin-right: 20px;
+    text-decoration: none;
+    
+    color: #BF1616;
+    padding: 5px 0;
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+}
+
+.nav-links a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #BF1616;
+    transition: width 500ms ease;
+  }
+   
+  .nav-links a:hover:after {
+    width: 100%;
+  }
+
+.ready-player-1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.search{
+    text-align: center;
+    padding-top: 50px;
+}
+.search_bar{
+   background-color: #F2F2F2;
+   border:none;
+  width: 700px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+ 
+}
+
+.search_button{
+    padding-top: 12px;
+  padding-bottom: 12px;
+  border:none;
+  background-color: #BF1616 ;
+  color: white;
+  font-family:  'Poppins', sans-serif;
+}
+
+.main-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 80px;
+    height: 70vh;
+}
+.infos_title{
+    display: flex;
+    flex-direction: column;
+} 
+
+.infos_like{
+    display: flex;
+    flex-direction: column;
+}
+
+.all_infos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.like{
+    transform: translateX(-20px);
+    margin-top: 5px;
+}
+
+.infos{
+    display: flex;
+    align-items: baseline;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    
+    
+}
+
+.users{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    color: #BF1616;
+    font-weight: 300;
+    padding : 5px 0;
+    position: relative;
+
+}
+
+.users:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #BF1616;
+    transition: width 500ms ease;
+  }
+   
+  .users:hover:after {
+    width: 100%;
+  }
+
+.theylike{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    
+
+    
+}
+
+.main-content::-webkit-scrollbar{
+    background-color:#F2F2F2;
+    
+    height: 8px;
+}
+
+
+
+
+.main-content::-webkit-scrollbar-thumb {
+    background-color: #BF1616;
+    
+    border-radius: 10px;
+}
+
+.first-item{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.song{
+    text-decoration: none;
+    margin-left: 40%;
+    
+    
+}
+
+
+
+ .filter{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0);
+    transition: backdrop-filter 500ms ease;
+}
+
+.filter:hover{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+   
+} 
+
+
+.play{
+    width: 50px;
+    transform: translateY(120px);
+    
+   
+    
+}
+
+.pause{
+    display: none;
+    width: 50px;
+    transform: translateY(120px);
+    margin-left: 10px;
+}
+
+hr{
+    margin-left: 350px;
+    margin-right: 350px;
+    border-color: #C8C3C3;
+    opacity: 0.5;
+    margin-top: 125px;
+}
+
+footer{
+    background-color: #BF1616;
+    text-align: center;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 300;
+    padding: 15px 0 15px 0;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-body{
+    width:700px;
+}
+
+.col-md-6 input{
+    border-radius: 5px;
+    border: solid 1px ;
+    border-color: #C8C3C3;
+    padding: 15px 0px 15px 20px;
+    width: 500px;
+    
+}
+
+.col-md-6{
+    padding-top: 15px;
+    
+}
+
+.text-md-right{
+    padding: 20px;
+    font-family: "Poppins";
+    font-size: 15px;
+    
+}
+
+.justify-content-center{
+    height: 70vh;
+}
+
+.card{
+    transform: translateY(100px);
+}
+
+.card-header{
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.btn-primary{
+    color: white;
+    background-color: #BF1616;
+    border: solid 1px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    transform: translateX(180px);
+    margin-top: 25px;
+}
+
+.card-body{
+    transform: translateY(35px);
+}
+
+.form-check{
+   
+    margin-bottom: 25px;
+    font-family: "Poppins";
+}
+
+.btn-link{
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 14px;
+}
+
+.hr {
+    /* centre verticalement les enfants entre eux */
+    align-items: center;
+    transform: translateY(-150px);
+    /* active flexbox */
+    display: flex;
+    font-family: "Poppins";
+    color: #C8C3C3;
+opacity: 0.5;
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+    text-align: center;
+}
+
+.hr::before,
+.hr::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border-top: .0625em solid #C8C3C3;
+    opacity: 0.8;
+
+    /* nécessaire pour afficher les pseudo-éléments */
+    content: "";
+
+    /* partage le reste de la largeur disponible */
+    flex: 1;
+
+    /* espace les traits du texte */
+    margin: 1em;
+}
+
+.login {
+    text-align: center;
+    transform: translateY(-90px);
+    
+}
+
+.connexion{
+    width: 329px;
+    height: 39px;
+    background-color: transparent;
+    border: solid 1px #BF1616;
+    color:#BF1616;
+    padding: 10px 90px 10px 90px;
+    text-decoration: none;
+  
+}
+
+.connexion:hover{
+    background-color: #BF1616;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+.register {
+    text-align: center;
+    transform: translateY(-90px);
+    
+}
+
+.inscription{
+    width: 329px;
+    height: 39px;
+    background-color: transparent;
+    border: solid 1px #BF1616;
+    color:#BF1616;
+    padding: 10px 90px 10px 90px;
+    text-decoration: none;
+  
+}
+
+.inscription:hover{
+    background-color: #BF1616;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+.upload_button{
+    background-color:#BF1616 ;
+    color: white;
+    padding: 15px 318px 15px 318px;
+    text-decoration: none;
+    font-family: "Poppins";
+    
+   
+    
+    
+}
+
+.create_song{
+    margin-top:30px;
+    text-align: center;
+    
+}
+
+.infos_users{
+    font-family: "Poppins";
+    height: 150vh;
+    margin-top: 100px;
+}
+
+.btn-follow{
+    font-family: "Poppins";
+    font-weight: normal;
+
+    color: #BF1616;
+    background-color:transparent ;
+    border-radius: 5px;
+    border: solid 1px #BF1616;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+}
+
+.btn-followed{
+    font-family: "Poppins";
+    font-weight: normal;
+    color: white;
+    background-color:#BF1616 ;
+    border-radius: 5px;
+   
+    padding: 8px 25px 8px 25px;
+    text-decoration: none;
+}
+
+.align-right{
+    text-align: left;
+    
+}
+
+.song_like{
+    
+}
+
+.label-file {
+    cursor: pointer;
+    color: white;
+    background : #BF1616 ;
+    padding: 15px 200px 15px 200px ;
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 20px;
+    
+}
+.label-file:hover {
+    background-color: transparent;
+    border: solid 1px #BF1616;
+    color: #BF1616;
+    transition: ease-in-out 0.5s;
+    
+    
+}
+
+.label-file-img {
+    cursor: pointer;
+    color: white;
+    background : #BF1616 ;
+    padding: 15px 207px 15px 207px ;
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 20px;
+    
+}
+.label-file-img:hover {
+    background-color: transparent;
+    border: solid 1px #BF1616;
+    color: #BF1616;
+    transition: ease-in-out 0.5s;
+    
+    
+}
+
+
+
+
+
+.input-file {
+    display: none;
+}
+
+.new_song{
+
+   text-align: center;
+}
+
+.new_song input[type=text]{
+    border-radius: 5px;
+    border: solid 1px ;
+    border-color: #C8C3C3;
+    padding: 15px 0px 15px 20px;
+    width: 500px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.new_song input[type=submit]{
+    cursor: pointer;
+    color: white;
+    background : #BF1616 ;
+    padding: 5px 20px 5px 20px ;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 70px;
+    border: none;
+    border-radius: 5px;
+}
+
+.creat_title{
+    font-family: "Poppins";
+}
+
+.all_form{
+    height: 80vh;
+    transform: translateY(70px) ;
+}
+
+/* Global Reset */
+
+
+
+.container-audio {
+    width: 66%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+     background-color: #f1f3f4
+     ;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+    
+   
+}
+audio {
+  width:100%;
+  outline: none;
+  
+  
+} 
+
+.translate{
+ transform: translateY(110px);  
+}
+
+.background-audio{
+    background-color: #BF1616;
+    width: 100%;
+    padding: 50px 0 50px 0;
+} 
+
+
+.search_result{
+    height: 80vh;
+    font-family: "Poppins";
+}
+
+.search_result h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+.search_result h4{
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.search_users{
+    list-style: none;
+    
+}
+
+.search_users a{
+    text-decoration: none;
+    color: #BF1616;
+    padding: 5px 0;
+    position: relative;
+   
+}
+
+/* .search_users a:hover{
+    text-decoration: underline;
+} */
+
+   
+  .search_users a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #BF1616;
+    transition: width 500ms ease;
+  }
+   
+  .search_users a:hover:after {
+    width: 100%;
+  }
